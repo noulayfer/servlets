@@ -63,7 +63,7 @@
                 <configuration>
                     <warSourceDirectory>tomcat/src/main/webapp</warSourceDirectory>
                     <warName>for_jenkins</warName>
-                    <webXml>tomcat/src/main/webapp/WEB-INF/web.xml</webXml>
+                    <webXml>/tomcat/src/main/webapp/WEB-INF/web.xml</webXml>
                 </configuration>
             </plugin>
         </plugins>
