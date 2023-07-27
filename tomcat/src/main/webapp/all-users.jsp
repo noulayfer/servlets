@@ -31,13 +31,13 @@
     <label for="userId">User ID:</label>
         <input type="text" name="userId" id="userId">
         <br>
-        <label for="firstName">Parameter 1:</label>
+        <label for="firstName">First name:</label>
         <input type="text" name="firstName" id="firstName">
         <br>
-        <label for="lastName">Parameter 2:</label>
+        <label for="lastName">Last name:</label>
         <input type="text" name="lastName" id="lastName">
         <br>
-        <label for="age">Parameter 3:</label>
+        <label for="age">Age:</label>
         <input type="text" name="age" id="age">
         <br>
         <button type="submit" name="action" value="Set">Set</button>
