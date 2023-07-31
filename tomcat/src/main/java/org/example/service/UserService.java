@@ -26,13 +26,13 @@ public class UserService {
     public String updateUser(String id, String firstName, String lastName, String age) throws SQLException {
         ResultSet userById = jdbcRepository.getUserById(id);
         User user = mapResultSetToUser(userById).get(0);
-        if (firstName == null) {
+        if (firstName.equals("")) {
             firstName = user.getFirstName();
         }
-        if (lastName == null) {
+        if (lastName.equals("")) {
             lastName = user.getLastName();
         }
-        if (age == null) {
+        if (age.equals("")) {
             age = String.valueOf(user.getAge());
         }
         String affectedId = jdbcRepository.updateUser(id, firstName, lastName, Integer.parseInt(age));
